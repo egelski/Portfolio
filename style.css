@@ -1,0 +1,459 @@
+
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 15px;
+line-height: 1.6;
+color:#333;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.hr{
+    display: block;
+    width:100% ;
+    height: 1px;
+    margin: 40px 0;
+    border: 0;
+    background-color: #e5e5e5;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url(.//images/polsha-varshava-warsaw.jpg) center no-repeat;
+-webkit-background-size:cover;
+    background-size: cover;
+}
+.intro__inner{
+    width: 100%;
+    min-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+.intro__title{
+    font-size: 130px;
+    font-weight: 700;
+    opacity: .6;
+    text-align: center;
+    line-height: 1.1;
+    color: rgb(247, 247, 252);
+}
+.intro__title: after{
+content:"";
+display: block;
+width: 60px;
+height: 3px;
+background-color: #fff;
+margin: 60px avto;
+
+}
+.intro__suptitle{
+   font-size: 62px;
+   color: rgb(247, 247, 252);
+   opacity: .6;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+margin-bottom: 20px;
+}
+.header{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+.header__inner{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:#fff;
+    opacity: 0.6;
+}
+
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav__link{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(108, 188, 202);
+    text-decoration:none ;
+    transition:color 0.2s linear;
+}
+.nav__link:after {
+    content:"" ;
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background-color: rgb(230, 54, 54);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav__link:hover{
+    color:rgb(247, 247, 252);
+}
+
+.nav__link:hover:after,
+.nav__link.active:after{
+    display: block;
+    
+}
+.nav__link.active{color:rgb(252, 242, 242);
+
+}
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 25px;
+    border:2px solid #fff;
+    font-size:14px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .1s linear,color .1s linear;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #333;
+
+}
+.slider{
+   
+}
+.slider__inner{
+    display: flex;
+    justify-content: space-between;
+ bottom: 0;
+ left: 0;
+ z-index: 1;
+ width: 100%;
+}
+.slider__item{
+    width: 23%;
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+  text-transform: uppercase;  
+  padding: 20px 0;
+  border-top: 2px solid rgb(252, 242, 242);
+   opacity: 0.7;
+   position: relative;
+}
+.slider__item.active{
+    opacity: 1;
+
+}
+.slider__item.active:before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+     background-color: red;
+     position: absolute;
+     top: -3px;
+     left: 0;
+     z-index: 1;
+
+
+
+}
+.section{
+    padding: 80px 0;
+
+
+}
+.section--devices{
+    margin-bottom: 40px;
+    padding-bottom: 0;
+     background:url(./images/fon.png) center no-repeat;
+     -webkit-background-size:cover ;
+     background-size:cover;
+
+}
+.section--weeat{
+    margin-bottom: 40px;
+    padding-bottom: 0;
+     
+     -webkit-background-size:cover ;
+     background-size:cover;
+
+}
+.section__header{
+    margin:0 auto 40px;
+    width: 100%;
+    min-width: 950px;
+text-align:center;
+}
+.section__suptitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+
+}
+.section__title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+
+}
+.section__title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 30px auto 0;
+}
+.section__text{
+    color: #999;
+    font-size: 15px;
+
+}
+
+.about{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about__item{
+    width: 350px;
+    background-color:  rgb(121, 215, 228);
+    position: relative;
+}
+.about__item:hover .about__img{
+    transform: translate3d(-10px,-10px,0);
+}
+
+.about__item:hover .about__img img {
+
+    opacity: 0.1;
+
+}
+.about__item:hover .about__text{
+    opacity: 1;
+}
+
+.about__img{
+    background: linear-gradient(to bottom,
+    #f38181,#fce38a) ;
+    transition: transform .2s linear;
+}
+.about__img img{
+    display: block;
+ transition: opacity 0.1s linear;   
+}
+.about__text{
+    width: 100%;
+    color: rgb(252, 242, 242);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left:0;
+    z-index: 2;
+    transform:translate3d(0,-50%,0);
+    transition: opacity 0.1s linear;
+}
+.statistics{
+    background-color: rgb(125, 205, 236);
+
+}
+.head__stat{
+    font-size: 45px;
+    font-family: serif;
+    color: rgb(252, 242, 242);
+    text-align:center;
+
+}
+.stat{
+    display: flex;
+
+}
+.stat__item {
+    padding: 70px 25px;
+    flex:1 1 0;
+    border-left: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+}
+.stat__item:last-child{
+    border-right: 1px solid #fff;
+
+
+}
+.stat__count{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.stat__text{
+    tab-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.services{
+    display: flex;
+    flex:1 1 0;
+
+}
+.services__item{
+    flex:1 1 0;
+    padding-left:85px;
+    position: relative;
+    padding-right: 35px;
+
+
+}
+.services__icon{
+   position: absolute; 
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+.services__title{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color:#333;
+    text-transform: uppercase;
+}
+.services__text{
+    font-size: 15px;
+    color: #999;
+
+}
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.devices__item{
+    display: block;
+}
+.devices__item--foto{
+    position: absolute;
+    bottom: -50px;
+    right: -150px;
+    z-index: 1;
+}
+.weeat{
+    display: flex;
+    
+}
+.weeat__item{
+    flex:1 1 0;
+   
+
+}
+
+.accordion__item{
+    border: 1px solid #e28282;
+    margin-bottom: ;
+}
+.accordion__item.active
+.accordion__content{
+    display: block;
+
+}
+.accordion__item.active
+.accordion__header:after{
+    transform:translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+.accordion__header{
+    position: relative;
+padding: 10px 20px 15px 65px;
+border-bottom: 1px solid transparent;
+cursor: pointer;
+}
+.accordion__header:after{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform:translateY(-50%) rotate(135deg);
+
+    
+
+}
+.accordion__icon{
+    position: absolute;
+    top:50%;
+    left: 20px;
+    z-index: 1;
+   transform:translateY(-50%)
+
+    
+}
+.accordion__content{
+    display: none;
+   padding:15px 25px;
+   font-size: 15px;
+   font-style: italic;
+   font-weight: 300;
+   color: #999;
+
+}
+.accordion__title{
+    font-size: 14px;
+    color:#333;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+.reviews{
+    padding: 0 110px;
+}
+.reviews__item{
+    padding-left: 205px;
+    position: relative;
+
+}
+.reviews__photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
